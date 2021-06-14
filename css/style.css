@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-nav {
+  display: none;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: rgb(246, 246, 246);
+  font-weight: lighter;
+  position: relative;
+}
+a {
+  color: rgb(150, 150, 150);
+}
+.mainnav {
+  float: right;
+  margin-top: 1%;
+  margin-right: 10%;
+}
+.mainnav li {
+  display: inline;
+}
+.mainnav li a {
+  text-transform: uppercase;
+  color: rgb(150, 150, 150);
+  word-spacing: 0px;
+  margin-left: 5px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+.mainnav li a::first-letter {
+  font-size: 1.5rem;
+}
+.mainnav li a:hover {
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+.active {
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+div.mainheading {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/car1.jpg");
+  background-position: center;
+  color: white;
+  height: 250px;
+  position: relative;
+  margin: 0 10%;
+}
+div.mainheading h1 {
+  font-size: 4rem;
+  text-align: center;
+  word-spacing: 1px;
+}
+div.mainheading h1::first-letter {
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgb(225, 225, 225);
+}
+div.mainheading h2 {
+  font-size: 2rem;
+  text-align: center;
+  word-spacing: 1px;
+}
+div.mainheading div.search_box {
+  text-align: right;
+}
+font {
+  font-size: 2rem;
+}
+input.searc {
+  position: absolute;
+  border: 1.2px solid orange;
+  padding: 6px 0px 6px 9px;
+  border-radius: 20px;
+  color: rgb(120, 120, 120);
+  top: 80%;
+  right: 5%;
+  width: 150px;
+  height: auto;
+  font-size: 0.7rem;
+  transition: all 0.6 ease;
+}
+input.searc:hover {
+  color: rgb(100, 100, 100);
+}
+.fa-search {
+  transform: translateX(-30px);
+  color: orange;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 82.7%;
+  right: 4%;
+}
+
+div.newestessays {
+  background-color: rgb(240, 240, 240);
+  padding: 20px 35px;
+  display: block;
+  text-align: left;
+  position: relative;
+  margin: 0% 10%;
+}
+div.newestessays h3 {
+  margin-top: 25px;
+  color: rgb(120, 120, 120);
+  font-size: 1.5rem;
+}
+div.left-side {
+  float: left;
+  margin-left: 5%;
+}
+div.right-side {
+  margin-left: 10%;
+  display: inline-block;
+}
+div.newestessays ul li a:hover {
+  color: orange;
+  transition: all 0.2s ease;
+}
+.hover {
+  padding-bottom: 5px;
+  color: rgb(120, 120, 120);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 10%;
+  display: inline-block;
+}
+.form {
+  margin-top: 20px;
+  color: rgb(130, 130, 130);
+  font-size: 1rem;
+  margin-left: 10%;
+}
+.comment {
+  font-weight: bold;
+}
+label {
+  display: block;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+textarea {
+  max-width: 800px;
+  width: 35vw;
+  height: 20vw;
+  background-color: rgb(236, 236, 236);
+  margin-left: 10%;
+}
+input {
+  border: 2px solid white;
+  height: 30px;
+}
+.sub {
+  font-weight: bold;
+  color: rgb(90, 90, 90);
+  border: 2px solid rgb(110, 110, 110);
+  border-radius: 5px;
+  display: block;
+  margin: 1% 0% 3% 55%;
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  transition: background-color ease-in 0.5s;
+}
+.sub:hover {
+  background-color: orange;
+  color: white;
+}
+/* footer */
+.footer {
+  background-color: black;
+  padding: 2% 10%;
+  font-size: 1rem;
+}
+.footer .sel {
+  float: left;
+}
+.footer .sel a:first-child {
+  font-size: 1.7rem;
+}
+.footer .sel a:hover:first-child {
+  color: rgb(220, 220, 220);
+}
+.footer .fnav {
+  font-weight: lighter;
+  margin-left: 60%;
+}
+.footer a:hover {
+  color: rgb(190, 190, 190);
+  transition: all 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1150px) {
+  div.left-side {
+    float: none;
+  }
+  div.right-side {
+    margin-left: 5%;
+  }
+}
+
+/* for big phone and tablet */
+@media only screen and (max-width: 1024px) {
+  * {
+    margin: 0%;
+  }
+  html {
+    font-size: 14px;
+  }
+  .mainnav li {
+    display: none;
+  }
+  input.searc {
+    width: 120px;
+    height: auto;
+    padding: 4px 0px 4px 7px;
+  }
+  input.searc:hover {
+    font-weight: lighter;
+  }
+  .fa-search {
+    top: 82%;
+    right: 3%;
+  }
+  div.newestessays {
+    margin: 0px 50px;
+    background-color: rgb(246, 246, 246);
+  }
+  div.left-side {
+    float: none;
+  }
+  div.right-side {
+    margin-left: 5%;
+  }
+  .sub {
+    padding: 3px 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .mainnav {
+    display: none;
+  }
+  div.mainheading {
+    margin: 0;
+  }
+  input.searc {
+    width: 100px;
+  }
+  input.searc:hover {
+    font-weight: lighter;
+  }
+  div.newestessays {
+    margin: 0px 5px;
+    background-color: rgb(246, 246, 246);
+  }
+  div.left-side {
+    float: none;
+  }
+  .fa-search {
+    top: 82.5%;
+    right: 1.5%;
+  }
+  div.right-side {
+    margin-left: 5%;
+  }
+  .sub {
+    padding: 0px 4px;
+  }
+
+  /* mobile navbar */
+  .main-nav {
+    list-style: none;
+    margin-bottom: -8vh;
+    /* position: absolute; */
+    z-index: 2;
+    width: 40vw;
+    float: left;
+  }
+  .main-nav li {
+    display: none;
+    text-align: left;
+    transition: all 0.2s ease;
+  }
+  .main-nav li:hover {
+    background-color: grey;
+  }
+  .main-nav li a {
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  span {
+    color: black;
+    font-size: 30px;
+    transition: all 1s ease;
+    float: left;
+    display: block;
+  }
+  span:hover ~ li {
+    display: block;
+  }
+  .main-nav:hover li {
+    display: block;
+  }
+}

@@ -1,0 +1,1291 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: justify;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video,
+img,
+button {
+  display: inline-block;
+}
+progress {
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+button,
+a {
+  cursor: pointer;
+}
+img,
+video {
+  width: 100%;
+}
+
+/* container */
+.mani-container {
+  position: relative;
+  padding: 0.01em 16px;
+}
+.mani-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0.01em 16px;
+}
+.mani-badge,
+.mani-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+.mani-badge {
+  border-radius: 50%;
+}
+/* code */
+.mani-code,
+.mani-incode {
+  font-family: Consolas, "courier new";
+  font-size: 16px;
+}
+.mani-code {
+  width: auto;
+  padding: 8px 12px;
+  border-left: 4px solid #dc242d;
+  word-wrap: break-word;
+}
+.mani-incode {
+  color: ;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+}
+.mani-card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.mani-card-4,
+.mani-hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.w3-stretch {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.w3-content,
+.w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.w3-content {
+  max-width: 980px;
+}
+.w3-auto {
+  max-width: 1140px;
+}
+.w3-cell-row {
+  display: table;
+  width: 100%;
+}
+.w3-cell {
+  display: table-cell;
+}
+.w3-cell-top {
+  vertical-align: top;
+}
+.w3-cell-middle {
+  vertical-align: middle;
+}
+.w3-cell-bottom {
+  vertical-align: bottom;
+}
+.w3-rest {
+  overflow: hidden;
+}
+/* Position */
+.mani-move-topleft {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.mani-move-topright {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+.mani-move-bottomright {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.mani-move-bottomleft {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+.mani-move-middle {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.mani-move-topmiddle {
+  top: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -0%);
+}
+.mani-move-rightmiddle {
+  top: 50%;
+  right: 0;
+  position: absolute;
+  transform: translate(-0%, -50%);
+}
+.mani-move-bottommiddle {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -0%);
+}
+.mani-move-leftmiddle {
+  top: 50%;
+  left: 0;
+  position: absolute;
+  transform: translate(-0%, -50%);
+}
+.mani-center-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mani-shide {
+  display: none;
+}
+.mani-shide-visibility {
+  visibility: hidden;
+}
+
+/* Animations */
+
+.mani-spin {
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.mani-animate-fading {
+  animation: fading 10s infinite;
+}
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.mani-animate-opacity {
+  animation: animateopacity 1s;
+}
+@keyframes animateopacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.mani-animate-top {
+  position: relative;
+  animation: animatetop 0.7s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.mani-animate-left {
+  position: relative;
+  animation: animateleft 0.7s;
+}
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.mani-animate-right {
+  position: relative;
+  animation: animateright 0.7s;
+}
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+.mani-animate-bottom {
+  position: relative;
+  animation: animatebottom 0.7s;
+}
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.mani-animate-zoom {
+  animation: animatezoom 1.5s;
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.mani-drop {
+  animation: drop 2.25s ease;
+}
+@keyframes drop {
+  0% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mani-dropX {
+  animation: dropdown 2.25s ease;
+}
+@keyframes dropdown {
+  0% {
+    transform: scaleX(1.4);
+    opacity: 1;
+  }
+  25% {
+    transform: scaleX(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scaleX(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: scaleX(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.mani-dropY {
+  animation: dropup 2.25s ease;
+}
+@keyframes dropup {
+  0% {
+    transform: scaleY(1.4);
+    opacity: 1;
+  }
+  25% {
+    transform: scaleY(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scaleY(1.2);
+    opacity: 1;
+  }
+  75% {
+    transform: scaleY(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.mani-teeter {
+  animation: teeter 0.3s linear 2;
+  animation-delay: 0.1s;
+}
+@keyframes teeter {
+  25% {
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+    top: -5px;
+    bottom: -5px;
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    bottom: -5px;
+    top: -5px;
+  }
+}
+.mani-ltcorner {
+  position: relative;
+  animation: ltcorner 0.7s;
+}
+@keyframes ltcorner {
+  from {
+    left: -350px;
+    top: -350px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+}
+.mani-rtcorner {
+  position: relative;
+  animation: rtcorner 0.7s;
+}
+@keyframes rtcorner {
+  from {
+    right: -350px;
+    top: -350px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    top: 0;
+    opacity: 1;
+  }
+}
+.mani-lbcorner {
+  position: relative;
+  animation: lbcorner 0.7s;
+}
+@keyframes lbcorner {
+  from {
+    left: -350px;
+    bottom: -350px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.mani-rbcorner {
+  position: relative;
+  animation: rbcorner 0.7s;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+@keyframes rbcorner {
+  from {
+    right: -350px;
+    bottom: -350px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+/* Dropdown */
+
+.dd {
+  display: inline-block;
+  position: relative;
+}
+.dd-cont {
+  display: none;
+  position: absolute;
+  transition: display 4s ease;
+  z-index: 1;
+}
+.dd:hover .dd-cont {
+  display: block;
+}
+/* tooltip */
+.tooltip {
+  display: inline-block;
+  position: relative;
+}
+.tooltip .tooltiptextright {
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+
+  visibility: hidden;
+
+  width: 120px;
+  padding: 5px 0;
+
+  text-align: center;
+
+  color: #fff;
+  border-radius: 6px;
+  background-color: black;
+}
+
+.tooltip .tooltiptextleft {
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 105%;
+
+  visibility: hidden;
+
+  width: 120px;
+  padding: 5px 0;
+
+  text-align: center;
+
+  color: #fff;
+  border-radius: 6px;
+  background-color: black;
+}
+.tooltip .tooltiptexttop {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptextbottom {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+/* arrow */
+.tooltip .tooltiptextrightwa {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .tooltiptextrightwa::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip .tooltiptextleftwa {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+
+.tooltip .tooltiptextleftwa::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip .tooltiptexttopwa {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+
+.tooltip .tooltiptexttopwa::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip .tooltiptextbottomwa {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptextbottomwa::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptextleft {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptextright {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptextbottom {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptexttop {
+  visibility: visible;
+}
+.tooltip .tooltiptextbottomwa {
+  visibility: visible;
+}
+.tooltip .tooltiptexttopwa {
+  visibility: visible;
+}
+.tooltip .tooltiptextleftmwa {
+  visibility: visible;
+}
+.tooltip .tooltiptextrightmwa {
+  visibility: visible;
+}
+/* Padding */
+
+.mani-padd-small {
+  padding: 4px 8px !important;
+}
+.mani-padd {
+  padding: 8px 16px !important;
+}
+.mani-padd-large {
+  padding: 12px 24px !important;
+}
+.mani-padd-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.mani-padd-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+.mani-padd-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+}
+.mani-padd-48 {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+.mani-padd-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+/* colorsNmaes */
+
+.mani-amber,
+.mani-hover-amber:hover {
+  color: #000 !important;
+  background-color: #ffc107 !important;
+}
+.mani-aqua,
+.mani-hover-aqua:hover {
+  color: #000 !important;
+  background-color: #00ffff !important;
+}
+.mani-blue,
+.mani-hover-blue:hover {
+  color: #fff !important;
+  background-color: #2196f3 !important;
+}
+.mani-light-blue,
+.mani-hover-light-blue:hover {
+  color: #000 !important;
+  background-color: #87ceeb !important;
+}
+.mani-brown,
+.mani-hover-brown:hover {
+  color: #fff !important;
+  background-color: #795548 !important;
+}
+.mani-cyan,
+.mani-hover-cyan:hover {
+  color: #000 !important;
+  background-color: #00bcd4 !important;
+}
+.mani-blue-grey,
+.mani-hover-blue-grey:hover,
+.mani-blue-gray,
+.mani-hover-blue-gray:hover {
+  color: #fff !important;
+  background-color: #607d8b !important;
+}
+.mani-green,
+.mani-hover-green:hover {
+  color: #fff !important;
+  background-color: #4caf50 !important;
+}
+.mani-light-green,
+.mani-hover-light-green:hover {
+  color: #000 !important;
+  background-color: #8bc34a !important;
+}
+.mani-indigo,
+.mani-hover-indigo:hover {
+  color: #fff !important;
+  background-color: #3f51b5 !important;
+}
+.mani-khaki,
+.mani-hover-khaki:hover {
+  color: #000 !important;
+  background-color: #f0e68c !important;
+}
+.mani-lime,
+.mani-hover-lime:hover {
+  color: #000 !important;
+  background-color: #cddc39 !important;
+}
+.mani-orange,
+.mani-hover-orange:hover {
+  color: #000 !important;
+  background-color: #ff9800 !important;
+}
+.mani-deep-orange,
+.mani-hover-deep-orange:hover {
+  color: #fff !important;
+  background-color: #ff5722 !important;
+}
+.mani-pink,
+.mani-hover-pink:hover {
+  color: #fff !important;
+  background-color: #e91e63 !important;
+}
+.mani-purple,
+.mani-hover-purple:hover {
+  color: #fff !important;
+  background-color: #9c27b0 !important;
+}
+.mani-deep-purple,
+.mani-hover-deep-purple:hover {
+  color: #fff !important;
+  background-color: #673ab7 !important;
+}
+.mani-red,
+.mani-hover-red:hover {
+  color: #fff !important;
+  background-color: #f44336 !important;
+}
+.mani-sand,
+.mani-hover-sand:hover {
+  color: #000 !important;
+  background-color: #fdf5e6 !important;
+}
+.mani-teal,
+.mani-hover-teal:hover {
+  color: #fff !important;
+  background-color: #009688 !important;
+}
+.mani-yellow,
+.mani-hover-yellow:hover {
+  color: #000 !important;
+  background-color: #ffeb3b !important;
+}
+.mani-white,
+.mani-hover-white:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+.mani-black,
+.mani-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.mani-grey,
+.mani-hover-grey:hover,
+.mani-gray,
+.mani-hover-gray:hover {
+  color: #000 !important;
+  background-color: #9e9e9e !important;
+}
+.mani-light-grey,
+.mani-hover-light-grey:hover,
+.mani-light-gray,
+.mani-hover-light-gray:hover {
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+}
+.mani-dark-grey,
+.mani-hover-dark-grey:hover,
+.mani-dark-gray,
+.mani-hover-dark-gray:hover {
+  color: #fff !important;
+  background-color: #616161 !important;
+}
+.mani-pale-red,
+.mani-hover-pale-red:hover {
+  color: #000 !important;
+  background-color: #ffdddd !important;
+}
+.mani-pale-green,
+.mani-hover-pale-green:hover {
+  color: #000 !important;
+  background-color: #ddffdd !important;
+}
+.mani-pale-yellow,
+.mani-hover-pale-yellow:hover {
+  color: #000 !important;
+  background-color: #ffffcc !important;
+}
+.mani-pale-blue,
+.mani-hover-pale-blue:hover {
+  color: #000 !important;
+  background-color: #ddffff !important;
+}
+
+.mani-txt-amber,
+.mani-hover-txt-amber:hover {
+  color: #ffc107 !important;
+}
+.mani-txt-aqua,
+.mani-hover-txt-aqua:hover {
+  color: #00ffff !important;
+}
+.mani-txt-blue,
+.mani-hover-txt-blue:hover {
+  color: #2196f3 !important;
+}
+.mani-txt-light-blue,
+.mani-hover-txt-light-blue:hover {
+  color: #87ceeb !important;
+}
+.mani-txt-brown,
+.mani-hover-txt-brown:hover {
+  color: #795548 !important;
+}
+.mani-txt-cyan,
+.mani-hover-txt-cyan:hover {
+  color: #00bcd4 !important;
+}
+.mani-txt-blue-grey,
+.mani-hover-txt-blue-grey:hover,
+.mani-txt-blue-gray,
+.mani-hover-txt-blue-gray:hover {
+  color: #607d8b !important;
+}
+.mani-txt-green,
+.mani-hover-txt-green:hover {
+  color: #4caf50 !important;
+}
+.mani-txt-light-green,
+.mani-hover-txt-light-green:hover {
+  color: #8bc34a !important;
+}
+.mani-txt-indigo,
+.mani-hover-txt-indigo:hover {
+  color: #3f51b5 !important;
+}
+.mani-txt-khaki,
+.mani-hover-txt-khaki:hover {
+  color: #b4aa50 !important;
+}
+.mani-txt-lime,
+.mani-hover-txt-lime:hover {
+  color: #cddc39 !important;
+}
+.mani-txt-orange,
+.mani-hover-txt-orange:hover {
+  color: #ff9800 !important;
+}
+.mani-txt-deep-orange,
+.mani-hover-txt-deep-orange:hover {
+  color: #ff5722 !important;
+}
+.mani-txt-pink,
+.mani-hover-txt-pink:hover {
+  color: #e91e63 !important;
+}
+.mani-txt-purple,
+.mani-hover-txt-purple:hover {
+  color: #9c27b0 !important;
+}
+.mani-txt-deep-purple,
+.mani-hover-txt-deep-purple:hover {
+  color: #673ab7 !important;
+}
+.mani-txt-red,
+.mani-hover-txt-red:hover {
+  color: #f44336 !important;
+}
+.mani-txt-sand,
+.mani-hover-txt-sand:hover {
+  color: #fdf5e6 !important;
+}
+.mani-txt-teal,
+.mani-hover-txt-teal:hover {
+  color: #009688 !important;
+}
+.mani-txt-yellow,
+.mani-hover-txt-yellow:hover {
+  color: #d2be0e !important;
+}
+.mani-txt-white,
+.mani-hover-txt-white:hover {
+  color: #fff !important;
+}
+.mani-txt-black,
+.mani-hover-txt-black:hover {
+  color: #000 !important;
+}
+.mani-txt-grey,
+.mani-hover-txt-grey:hover,
+.mani-txt-gray,
+.mani-hover-txt-gray:hover {
+  color: #757575 !important;
+}
+.mani-txt-light-grey,
+.mani-hover-txt-light-grey:hover,
+.mani-txt-light-gray,
+.mani-hover-txt-light-gray:hover {
+  color: #f1f1f1 !important;
+}
+.mani-txt-dark-grey,
+.mani-hover-txt-dark-grey:hover,
+.mani-txt-dark-gray,
+.mani-hover-txt-dark-gray:hover {
+  color: #3a3a3a !important;
+}
+
+.mani-border-amber,
+.mani-hover-border-amber:hover {
+  border-color: #ffc107 !important;
+}
+.mani-border-aqua,
+.mani-hover-border-aqua:hover {
+  border-color: #00ffff !important;
+}
+.mani-border-blue,
+.mani-hover-border-blue:hover {
+  border-color: #2196f3 !important;
+}
+.mani-border-light-blue,
+.mani-hover-border-light-blue:hover {
+  border-color: #87ceeb !important;
+}
+.mani-border-brown,
+.mani-hover-border-brown:hover {
+  border-color: #795548 !important;
+}
+.mani-border-cyan,
+.mani-hover-border-cyan:hover {
+  border-color: #00bcd4 !important;
+}
+.mani-border-blue-grey,
+.mani-hover-border-blue-grey:hover,
+.mani-border-blue-gray,
+.mani-hover-border-blue-gray:hover {
+  border-color: #607d8b !important;
+}
+.mani-border-green,
+.mani-hover-border-green:hover {
+  border-color: #4caf50 !important;
+}
+.mani-border-light-green,
+.mani-hover-border-light-green:hover {
+  border-color: #8bc34a !important;
+}
+.mani-border-indigo,
+.mani-hover-border-indigo:hover {
+  border-color: #3f51b5 !important;
+}
+.mani-border-khaki,
+.mani-hover-border-khaki:hover {
+  border-color: #f0e68c !important;
+}
+.mani-border-lime,
+.mani-hover-border-lime:hover {
+  border-color: #cddc39 !important;
+}
+.mani-border-orange,
+.mani-hover-border-orange:hover {
+  border-color: #ff9800 !important;
+}
+.mani-border-deep-orange,
+.mani-hover-border-deep-orange:hover {
+  border-color: #ff5722 !important;
+}
+.mani-border-pink,
+.mani-hover-border-pink:hover {
+  border-color: #e91e63 !important;
+}
+.mani-border-purple,
+.mani-hover-border-purple:hover {
+  border-color: #9c27b0 !important;
+}
+.mani-border-deep-purple,
+.mani-hover-border-deep-purple:hover {
+  border-color: #673ab7 !important;
+}
+.mani-border-red,
+.mani-hover-border-red:hover {
+  border-color: #f44336 !important;
+}
+.mani-border-sand,
+.mani-hover-border-sand:hover {
+  border-color: #fdf5e6 !important;
+}
+.mani-border-teal,
+.mani-hover-border-teal:hover {
+  border-color: #009688 !important;
+}
+.mani-border-yellow,
+.mani-hover-border-yellow:hover {
+  border-color: #ffeb3b !important;
+}
+.mani-border-white,
+.mani-hover-border-white:hover {
+  border-color: #fff !important;
+}
+.mani-border-black,
+.mani-hover-border-black:hover {
+  border-color: #000 !important;
+}
+.mani-border-grey,
+.mani-hover-border-grey:hover,
+.mani-border-gray,
+.mani-hover-border-gray:hover {
+  border-color: #9e9e9e !important;
+}
+.mani-border-light-grey,
+.mani-hover-border-light-grey:hover,
+.mani-border-light-gray,
+.mani-hover-border-light-gray:hover {
+  border-color: #f1f1f1 !important;
+}
+.mani-border-dark-grey,
+.mani-hover-border-dark-grey:hover,
+.mani-border-dark-gray,
+.mani-hover-border-dark-gray:hover {
+  border-color: #616161 !important;
+}
+.mani-border-pale-red,
+.mani-hover-border-pale-red:hover {
+  border-color: #ffe7e7 !important;
+}
+.mani-border-pale-green,
+.mani-hover-border-pale-green:hover {
+  border-color: #e7ffe7 !important;
+}
+.mani-border-pale-yellow,
+.mani-hover-border-pale-yellow:hover {
+  border-color: #ffffcc !important;
+}
+.mani-border-pale-blue,
+.mani-hover-border-pale-blue:hover {
+  border-color: #e7ffff !important;
+}
+
+/* Columns */
+
+.mani-col {
+  float: left;
+  width: 100%;
+}
+.mani-col.s1 {
+  width: 8.33333%;
+}
+.mani-col.s2 {
+  width: 16.66666%;
+}
+.mani-col.s3 {
+  width: 24.99999%;
+}
+.mani-col.s4 {
+  width: 33.33333%;
+}
+.mani-col.s5 {
+  width: 41.66666%;
+}
+.mani-col.s6 {
+  width: 49.99999%;
+}
+
+.mani-col.s7 {
+  width: 58.33333%;
+}
+.mani-col.s8 {
+  width: 66.66666%;
+}
+
+.mani-col.s9 {
+  width: 74.99999%;
+}
+.mani-col.s10 {
+  width: 83.33333%;
+}
+.mani-col.s11 {
+  width: 91.66666%;
+}
+.mani-col.s12 {
+  width: 99.99999%;
+}
+
+/* Display */
+.mani-d .mani-dblock {
+  display: block;
+}
+.mani-dinline {
+  display: inline;
+}
+.mani-dinblock {
+  display: inline-block;
+}
+.mani-dflex {
+  display: flex;
+}
+.mani-dinflex {
+  display: inline-flex;
+}
+.mani-dgrid {
+  display: grid;
+}
+.mani-dingrid {
+  display: inline-grid;
+}
+
+@media (min-width: 601px) {
+  .mani-col.m1 {
+    width: 8.33333%;
+  }
+  .mani-col.m2 {
+    width: 16.66666%;
+  }
+  . .mani-col.m3 {
+    width: 24.99999%;
+  }
+  .mani-col.m4 {
+    width: 33.33333%;
+  }
+  .mani-col.m5 {
+    width: 41.66666%;
+  }
+  .mani-col.m6 {
+    width: 49.99999%;
+  }
+  .mani-col.m7 {
+    width: 58.33333%;
+  }
+  .mani-col.m8 {
+    width: 66.66666%;
+  }
+  .mani-col.m9 {
+    width: 74.99999%;
+  }
+  .mani-col.m10 {
+    width: 83.33333%;
+  }
+  .mani-col.m11 {
+    width: 91.66666%;
+  }
+  .mani-col.m12 {
+    width: 99.99999%;
+  }
+  .mani-mhide {
+    display: none;
+  }
+  .mani-mhide-visibility {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 993px) {
+  .mani-col.l1 {
+    width: 8.33333%;
+  }
+  .mani-col.l2 {
+    width: 16.66666%;
+  }
+  .mani-col.l3 {
+    width: 24.99999%;
+  }
+  .mani-col.l4 {
+    width: 33.33333%;
+  }
+  .mani-col.l5 {
+    width: 41.66666%;
+  }
+  .mani-col.l6 {
+    width: 49.99999%;
+  }
+  .mani-col.l7 {
+    width: 58.33333%;
+  }
+  .mani-col.l8 {
+    width: 66.66666%;
+  }
+  .mani-col.l9 {
+    width: 74.99999%;
+  }
+  .mani-col.l10 {
+    width: 83.33333%;
+  }
+  .mani-col.l11 {
+    width: 91.66666%;
+  }
+  .mani-col.l12 {
+    width: 99.99999%;
+  }
+  .mani-lhide {
+    display: none;
+  }
+  .mani-lhide-visibility {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+}
+/* align Text */
+
+.mani-left-align {
+  text-align: left !important;
+}
+.mani-right-align {
+  text-align: right !important;
+}
+.mani-justify {
+  text-align: justify !important;
+}
+.mani-center {
+  text-align: center !important;
+}
