@@ -16,17 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mani.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<style>
 
-.accordian:after {
-  content: '\002B';
-  float: right;
-}
-
-.active:after {
-  content: "\2212";
-}
-	</style>
 </head>
 
 <body>
@@ -43,7 +33,7 @@
 
 <div class="mainnav mani-rbcorner">
 		<ul dir="ltr" class="d">
-	        <li><a href="#" class="active"> home</a></li>
+	        <li><a href="#" class="active">home</a></li>
 			<li><a href="#">Essay topics</a></li>
 			<li><a href="#">service</a></li>
 			<li><a href="#">subjects</a></li>
@@ -58,7 +48,7 @@
         <h1>P.D.Essay Academy</h1>
         <h2><font color="orange">Find</font> best Essay Ideas for you</h2>
 	    <div class="search_box">
-		    <input class="searc" type="search" placeholder="Enter your topic"></input><i class="fa fa-search" aria-hidden="true" ></i>
+		    <input class="searc" type="search" placeholder="Enter your topic"><i class="fa fa-search" aria-hidden="true" ></i></input>
 	    </div>                                               	
  </div>
 <div class="newestessays">
@@ -119,21 +109,6 @@
 	        </ul>
 		</div>
 	</div>
- <script>
-var acc = document.getElementByIdName("accordion");
-var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
- </script>
 </body>
 </html>
