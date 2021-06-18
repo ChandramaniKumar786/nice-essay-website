@@ -1,53 +1,61 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 html {
   font-size: 12px;
 }
 body {
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(255, 249, 249);
   font-weight: lighter;
   position: relative;
 }
+.mainnav {
+  display: none;
+}
+.bar {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 0, 0);
+  padding: 8px;
+  text-align: right;
+  box-shadow: 0px 0px 40px #e06c6c;
+}
+.bar .fa-bars {
+  font-size: 25px;
+  color: white;
+}
 .main-nav {
   list-style: none;
-  margin-bottom: -8vh;
-  /* position: absolute; */
+  position: sticky;
   z-index: 2;
-  width: 40vw;
-  float: left;
 }
 .main-nav li {
   display: none;
-  text-align: left;
+  text-align: center;
   transition: all 0.2s ease;
+  background-color: rgb(255, 0, 0);
 }
 .main-nav li:hover {
-  background-color: grey;
+  background-color: rgb(211, 122, 122);
 }
 .main-nav li a {
   text-transform: uppercase;
-  color: black;
+  color: white;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.5s ease;
 }
-span {
-  color: black;
-  font-size: 30px;
-  transition: all 1s ease;
-  float: left;
-  display: block;
-}
-span:hover ~ li {
+div.bars:hover ~ li {
   display: block;
 }
 .main-nav:hover li {
   display: block;
-}
-a {
-  color: rgb(150, 150, 150);
 }
 
 div.mainheading {
@@ -55,8 +63,11 @@ div.mainheading {
     url("../img/car1.jpg");
   background-position: center;
   color: white;
-  height: 40vh;
+  height: 30vh;
   position: relative;
+  margin: 0;
+  overflow: hidden;
+  clear: right;
 }
 div.mainheading h1 {
   font-size: 4rem;
@@ -76,10 +87,10 @@ div.mainheading h2 {
 .search_box {
   position: absolute;
   right: 3rem;
-  top: 19rem;
+  bottom: 3rem;
 }
 input.searc {
-  border: 1.2px solid orange;
+  border: 1.2px solid rgb(255, 0, 0);
   padding: 6px 0px 6px 9px;
   border-radius: 20px;
   color: rgb(120, 120, 120);
@@ -91,7 +102,7 @@ input.searc:hover {
   color: rgb(100, 100, 100);
 }
 .fa-search {
-  color: orange;
+  color: rgb(255, 0, 0);
   font-size: 0.8rem;
   position: absolute;
   top: 0.8rem;
@@ -99,33 +110,41 @@ input.searc:hover {
 }
 
 div.newestessays {
-  background-color: rgb(240, 240, 240);
-  padding: 20px 35px;
+  background-color: rgb(255, 231, 231);
+  padding: 16px 32px;
   display: block;
   text-align: left;
+  width: 100%;
   position: relative;
 }
 div.newestessays h3 {
   margin-top: 25px;
-  color: rgb(120, 120, 120);
+  color: rgb(255, 0, 0);
   font-size: 1.5rem;
+}
+div.newestessays li {
+  list-style: none;
+}
+div.newestessays li a {
+  color: rgb(255, 110, 110);
+  text-decoration: none;
 }
 div.left-side {
   float: left;
   margin-left: 5%;
 }
 div.right-side {
-  margin-left: 10%;
-  display: inline-block;
+  display: block;
   clear: left;
+  margin-left: 5%;
 }
 div.newestessays ul li a:hover {
-  color: orange;
+  color: rgb(255, 33, 33);
   transition: all 0.2s ease;
 }
 .form {
   margin-top: 20px;
-  color: rgb(130, 130, 130);
+  color: rgb(255, 0, 0);
   font-size: 1rem;
   margin-left: 10%;
 }
@@ -137,6 +156,9 @@ label {
   cursor: pointer;
   font-size: 1.5rem;
 }
+textarea::placeholder {
+  color: #e06c6c;
+}
 textarea {
   max-width: 50vw;
   min-width: 25vw;
@@ -144,53 +166,67 @@ textarea {
   max-height: 25vh;
   min-height: 10vh;
   height: 20vw;
-  background-color: rgb(236, 236, 236);
+  font-size: 1rem;
+  border: 1px solid red;
+  background-color: rgb(255, 205, 205);
   margin-left: 10%;
-}
-input {
-  border: 2px solid white;
-  height: 30px;
+  color: rgb(255, 0, 0);
 }
 .sub {
   font-weight: bold;
-  color: rgb(90, 90, 90);
-  border: 2px solid rgb(110, 110, 110);
+  color: rgb(255, 0, 0);
+  border: 2px solid rgb(255, 0, 0);
   border-radius: 5px;
   display: block;
   margin: 1% 0% 3% 55%;
   padding: 4px 8px;
   font-size: 0.7rem;
-  transition: background-color ease-in 0.5s;
+  background-color: rgb(255, 224, 224);
+  transition: all ease-in 0.5s;
 }
 .sub:hover {
-  background-color: orange;
+  background-color: rgb(255, 109, 109);
   color: white;
 }
 /* footer */
 .footer {
-  background-color: black;
+  background-color: rgb(219, 0, 0);
   padding: 2% 10%;
   font-size: 1rem;
+  width: 100%;
+  color: white;
 }
 .footer .sel {
   float: left;
+  color: white;
 }
 .footer .sel a:first-child {
   font-size: 1.7rem;
+  color: white;
 }
 .footer .sel a:hover:first-child {
-  color: rgb(220, 220, 220);
+  color: white;
 }
 .footer .fnav {
   font-weight: lighter;
   margin-left: 60%;
+  color: white;
+}
+.footer .fnav li {
+  list-style: none;
 }
 .footer a:hover {
-  color: rgb(190, 190, 190);
+  color: rgb(255, 176, 176);
   transition: all 0.4s ease-in;
 }
 
-@media only screen and (min-width: 768px) {
+/* focus effect desabling */
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 769px) {
   * {
     margin: 0%;
   }
@@ -198,42 +234,51 @@ input {
     display: none;
   }
   html {
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .sub {
+    padding: 8px 16px;
+  }
+  .fa-search {
+    top: 8px;
+    right: 1rem;
   }
   input.searc:hover {
     font-weight: lighter;
   }
   div.newestessays {
-    margin: 0 7%;
-    background-color: rgb(246, 246, 246);
+    margin: 0 0 5% 15%;
+    background-color: rgb(255, 231, 231);
+    width: 70vw;
   }
   div.left-side {
     float: left;
+    margin-left: 5%;
   }
   div.right-side {
     margin-left: 5%;
   }
-  .sub {
-    padding: 0px 4px;
-  }
   div.mainheading {
     margin: 0 7%;
+    height: 40vh;
   }
   .search_box {
-    display: inline;
+    bottom: 3rem;
+    right: 3rem;
   }
+
   /* laptop navbar */
   .mainnav {
     float: right;
+    display: block;
     margin: 1% 7%;
   }
   .mainnav li {
-    display: inline;
+    display: inline-block;
   }
   .mainnav li a {
     text-transform: uppercase;
-    color: rgb(150, 150, 150);
-    word-spacing: 0px;
+    color: rgb(255, 0, 0);
     margin-left: 5px;
     font-size: 1rem;
     transition: all 0.5s ease;
@@ -242,9 +287,41 @@ input {
     font-size: 1.5rem;
   }
   .mainnav li a:hover {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(255, 0, 0);
   }
   .active {
-    border-bottom: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(255, 0, 0);
+  }
+
+  div.newestessays {
+    padding: 10px 25px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  html {
+    font-size: 9px;
+  }
+  div.left-side {
+    float: none;
+    display: block;
+  }
+  .mainnav {
+    display: none;
+  }
+  .fa-search {
+    top: 8px;
+    right: 5px;
+  }
+  div.newestessays {
+    padding: 5px 15px;
+  }
+  .footer {
+    font-size: 0.7rem;
+  }
+  .footer .sel a:first-child {
+    font-size: 1.2rem;
+  }
+  .form {
+    font-size: 0.5rem;
   }
 }
